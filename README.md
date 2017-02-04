@@ -1,18 +1,14 @@
+# H1 Unit Converstion App
 
-     ,-----.,--.                  ,--. ,---.   ,--.,------.  ,------.
-    '  .--./|  | ,---. ,--.,--. ,-|  || o   \  |  ||  .-.  \ |  .---'
-    |  |    |  || .-. ||  ||  |' .-. |`..'  |  |  ||  |  \  :|  `--, 
-    '  '--'\|  |' '-' ''  ''  '\ `-' | .'  /   |  ||  '--'  /|  `---.
-     `-----'`--' `---'  `----'  `---'  `--'    `--'`-------' `------'
-    ----------------------------------------------------------------- 
+The purpose of this app is to take input from a user in **metric** and convert that
+into **imperial** and vis versa.
 
+This app will allow the user to convert:
+* Volumes
+* Masses
+* Lengths
 
-Hi there! Welcome to Cloud9 IDE!
+Below is a list of values used in the app to perform the conversions:
+![alt text](http://www.championfreight.co.nz/Convert_Volume_01.jpg)
 
-To get you started, create some files, play with the terminal,
-or visit http://docs.c9.io for our documentation.
-If you want, you can also go watch some training videos at
-http://www.youtube.com/user/c9ide.
-
-Happy coding!
-The Cloud9 IDE team
+The influence of the UI was inspired by [This unit converter](http://convert.french-property.co.uk/)
