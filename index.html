@@ -1,0 +1,38 @@
+<html ng-app="UnitConverter">
+    <head>
+        <title>Unit Converter</title>
+    </head>
+    <body>
+        <h1>Converter App</h1>
+        <div ng-controller="UnitConverterController as ucc">
+            <input type="text" ng-model="ucc.metricLengthValue" id="Length_value" name="VALUE" placeholder="Enter Amount" value="">
+            <select ng-model="ucc.selected_metric_volume_unit" 
+                    ng-options="unit.unit_name for unit in ucc.metric_volume_units" 
+                    ng-change="ucc.showSelectedMetricUnit()"></select>
+            <h2>=</h2>
+            <input type="text" ng-model="ucc.imperialLengthValue" id="Length_value" name="VALUE" placeholder="Enter Amount" value="">
+            <select ng-model="ucc.selected_imperial_volume_unit"
+                    ng-options="unit.unit_name for unit in ucc.imperial_volume_units"
+                    ng-change="ucc.showSelectedImperialUnit()"></select>
+            <!--<select></select>
+            <select></select>-->
+            <div>
+                <p>Selected Metric unit is: <span ng-bind="ucc.selected_metric_volume_unit.unit_name"></span></p>
+            </div>
+            <div>
+                <p>Selected Imperial unit is: <span ng-bind="ucc.selected_imperial_volume_unit.unit_name"></span></p>
+            </div>
+            <div>
+                <p>Selected Metric unit value is: <span ng-bind="ucc.selected_metric_volume_unit.value"></span></p>
+            </div>
+            <div>
+                <p>Selected Imperial unit value is: <span ng-bind="ucc.selected_imperial_volume_unit.value"></span></p>
+            </div>
+        </div>
+        <script src="angular.min.js"></script>
+        <script src="app.js"></script>
+    </body>
+</html>
+
+<!--http://convert.french-property.co.uk/-->
+<!--https://github.com/ahuimanu/cidm4385-2016sp-angular-services/blob/master/app.js-->
